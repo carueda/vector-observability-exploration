@@ -1,0 +1,12 @@
+[api]
+enabled = true
+
+[sources.demo]
+type = "demo_logs"
+format = "json"
+interval = 1.0
+
+[sinks.out]
+inputs = ["demo"]
+type = "console"
+encoding.codec = "text"
